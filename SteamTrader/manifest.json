@@ -1,0 +1,43 @@
+﻿{
+  "manifest_version": 2,
+
+  "name": "SteamTrader",
+  "description": "Дополнение для покупок вещей в стим маркете",
+  "version": "1.0",
+
+  "options_page": "options.html",  
+  
+  "app": {
+    "launch": {
+      "local_path": "main.html"
+    }
+  },
+  
+  "icons": {
+    "128": "128.png"
+  },
+
+  "oauth2": {
+    "client_id": "367136361549.apps.googleusercontent.com",
+    "scopes": [
+      "https://docs.google.com/feeds/",
+      "https://docs.googleusercontent.com/",
+      "https://spreadsheets.google.com/feeds/",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["http://steamcommunity.com/market/*"],
+      "css": [ "myStyle.css", "css/bootstrap.css"],
+      "js": [ "prototype-1.7.js" ,"bg.js"]
+    }
+  ],
+  "permissions": [
+	"http://steamcommunity.com/market/",
+	"http://steamcommunity.com/",
+	"storage",
+	"unlimitedStorage"
+  ]
+}

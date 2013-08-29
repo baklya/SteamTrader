@@ -1,0 +1,73 @@
+﻿<html>
+<head><title>Steam Trader Extension Options</title></head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top bs-docs-nav" style="background-color: rgb(55, 51, 99);">
+  <div class="container">
+    <div class="nav-collapse collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="../getting-started">Настройка списка вещей</a>
+        </li>
+        <li>
+          <a href="../components">Что-то еще</a>
+        </li>
+        <li>
+          <a href="../javascript">И еще</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container bs-docs-container" style="padding-top: 80px; ">
+
+
+
+    <div class="row">
+		<h2>Настройка списка вещей</h2>
+		<span>Поиск </span>
+		<input id="searchInput" type="text"/>
+		
+		<button id="save" class="btn btn-success">Save</button>
+
+		
+		
+		<button id="resetList" class="btn btn-danger" style="float: right;">Очистить список</button>
+		
+		
+		<button id="backup" class="btn btn-warning" style="float: right;">Сделать бэкап списка</button>
+
+		
+		
+		<div class="col-lg-9">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Название вещи</th>
+						<th>Тип вещи</th>
+						<th>Цена</th>
+						<th>Активна ли</th>
+					</tr>
+				</thead>
+				<tbody  id="itemList">
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+<script src="options.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</html>
